@@ -11,7 +11,8 @@
     "db:seed": "node scripts/invoicing-db.mjs seed",
     "db:migrate-json": "node scripts/invoicing-db.mjs migrate-json",
     "db:status": "node scripts/invoicing-db.mjs status",
-    "verify:invoicing": "node scripts/verify-invoicing.mjs"
+    "verify:invoicing": "node scripts/verify-invoicing.mjs",
+    "verify:shipping": "node scripts/verify-shipping-invoice.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.4.0",

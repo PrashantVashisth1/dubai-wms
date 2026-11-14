@@ -1,0 +1,67 @@
+{
+  "_comment": "TEST FIXTURE: minimal dataset (1 item, 1 package). Invented values.",
+  "branding": {
+    "headerText": "Hamburg, Germany"
+  },
+  "invoice": {
+    "date": "2027-03-05",
+    "invoiceRefNo": "SI-TEST-0001",
+    "orderNumber": "PO-77",
+    "currency": "AED",
+    "importerCode": "",
+    "agentCode": "AG-9",
+    "repCardNo": "RC-1",
+    "shipper": {
+      "companyName": "Nordlicht Trading GmbH",
+      "addressLines": [
+        "Hafenweg 3",
+        "20457 Hamburg"
+      ],
+      "contactName": "Jana Weber",
+      "mobile": "+49 40 555 0100"
+    },
+    "shipTo": {
+      "companyName": "Oasis Retail LLC",
+      "addressLines": [
+        "Al Quoz 4"
+      ],
+      "country": "United Arab Emirates",
+      "contactPerson": "Omar Haddad",
+      "mobile": "+971 4 555 0199",
+      "email": "omar@example.com"
+    },
+    "fromLocation": "Hamburg Port",
+    "toCountry": "UAE",
+    "transactionType": "Import",
+    "paymentMethod": "Deposit",
+    "refAcNo": "ACC-55",
+    "goodsDescription": "Kitchen appliances",
+    "hsCodeLabel": "8516.60",
+    "marksAndNumbers": "OASIS/HAM/01",
+    "cargoType": "CTN",
+    "packageType": "CARTON",
+    "carrierAgent": "Blue Wave Shipping",
+    "items": [
+      {
+        "itemCode": "KA-100",
+        "description": "Electric kettle 1.7L",
+        "qty": 40,
+        "serialNo": "SN-A1",
+        "unitPrice": 12.5,
+        "hsCode": "85167100",
+        "eccn": "EAR99",
+        "coo": "DE",
+        "inboundRef": "IN-2027-01",
+        "grossWeightKg": 52.4
+      }
+    ],
+    "packages": [
+      {
+        "lengthCm": 60,
+        "widthCm": 40,
+        "heightCm": 35,
+        "qty": 1
+      }
+    ]
+  }
+}

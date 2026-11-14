@@ -81,3 +81,35 @@ every write with zod regardless.
   invoices are issued in several currencies.
 - Aging is calculated from current outstanding balances (payments dated after the as-of date are not unwound).
 - The invoice PDF uses built-in Helvetica (Latin-1); non-Latin characters are replaced with `?`.
+
+## Shipping Invoice (3-page PDF)
+
+Sidebar: **Invoices → Shipping Invoices** (and **Company Profile**). Sales invoices are unchanged; a
+sales invoice page has a **Shipping Invoice** button that opens a new shipping invoice pre-filled from it
+(customer → ship-to, items, currency, PO). Data lives in the `shipping_invoices` collection
+(unique `invoiceRefNo`); logo + header line live in `company_settings` (one document) and can be
+overridden per invoice.
+
+PDF (`GET /api/v1/invoicing/shipping-invoices/:id/pdf[?download=true]`):
+1. DELIVERY ADVICE (A4 portrait) 2. INVOICE / PACKING LIST (A4 landscape) 3. DETAILED COMMODITY
+CLASSIFICATION FORM (A4 portrait). Pages 2 and 3 continue onto extra pages with repeated table headers
+when there are many rows; totals always print after the last row. Totals, CBM, B/E Ref Nos. and country of
+origin are calculated by `src/lib/shipping/shippingInvoice.ts` (shared by the form preview, API and PDF).
+
+Fonts: page 1 uses PDF Helvetica (same metrics as Arial); pages 2–3 embed **Carlito** (SIL OFL,
+metric-compatible with Calibri) from `src/lib/server/pdf/fonts/`. Regenerate `fontData.ts` with
+`python scripts/generate-pdf-fonts.py` if the fonts change. No PDF library dependency.
+
+Verification:
+
+```bash
+npm run dev
+node scripts/verify-shipping-invoice.mjs --yes [--base=http://localhost:3000/api/v1] [--logo=logo.png] [--out=tmp/shipping]
+# visual parity against the client's reference PDF (Python + pypdfium2 + Pillow):
+python scripts/compare-shipping-pdf.py --extract-logo <reference.pdf> tmp/logo.png   # test-only logo
+python scripts/compare-shipping-pdf.py <reference.pdf> tmp/shipping/reference-sample.pdf tmp/shipping/compare
+```
+
+Test fixtures (`tests/fixtures/shipping-invoice/`): `reference-sample.json` (values from the client's
+reference PDF – test only), `minimal.json` (1 item / 1 package), `stress.json` (30 items, 28 package rows,
+EUR, long text, accents).

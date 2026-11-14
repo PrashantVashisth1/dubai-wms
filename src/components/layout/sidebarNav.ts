@@ -79,6 +79,7 @@ import {
   Gauge,
   MapPin,
   Grid3X3,
+  Ship,
 } from 'lucide-react';
 
 export interface NavItem {
@@ -223,6 +224,7 @@ export const navItems: NavItem[] = [
     icon: Receipt,
     children: [
       { label: 'Sales Invoices', href: '/invoicing/sales-invoices', icon: FileText },
+      { label: 'Shipping Invoices', href: '/invoicing/shipping-invoices', icon: Ship },
       { label: 'Payments', href: '/invoicing/payments', icon: CreditCard },
       { label: 'Delivery Notes', href: '/invoicing/delivery-notes', icon: Truck },
       { label: 'Credit Notes', href: '/invoicing/credit-notes', icon: FileMinus },
@@ -235,6 +237,7 @@ export const navItems: NavItem[] = [
       { label: 'Revenue by Item', href: '/invoicing/reports/revenue-by-item', icon: Package },
       { label: 'Tax Templates', href: '/invoicing/tax-templates', icon: Percent },
       { label: 'Print Formats', href: '/invoicing/print-formats', icon: Printer },
+      { label: 'Company Profile', href: '/invoicing/company-profile', icon: Building2 },
       { label: 'Recurring Invoices', href: '/invoicing/subscriptions', icon: Repeat },
       { label: 'Invoice Audit Log', href: '/invoicing/audit-log', icon: History },
     ],

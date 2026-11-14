@@ -1,0 +1,60 @@
+{
+  "_comment": "TEST FIXTURE ONLY. Values transcribed from the client's reference PDF to verify layout parity. Never import this from production code.",
+  "expected": { "qty": 122, "value": 1614065.12, "weightKg": 4807, "packages": 21, "cbmPage1": "36.1104", "cbmPage2": "36.11" },
+  "branding": { "headerText": "Dubai ,United Arab Emirates " },
+  "invoice": {
+    "date": "2026-10-02",
+    "invoiceRefNo": "2721561/2756349/2757093",
+    "orderNumber": "",
+    "currency": "USD",
+    "importerCode": "AE-1160161",
+    "agentCode": "",
+    "repCardNo": "",
+    "shipper": {
+      "companyName": "Connects Solutions FZE ",
+      "addressLines": ["FZS1 BC03,SOUTH ZONE,", "JEBEL ALI FREE ZONE,Dubai", "United Arab Emirates"],
+      "contactName": "Prabu Solaiappan",
+      "mobile": "+971 551434309"
+    },
+    "shipTo": {
+      "companyName": "Velasea LLC",
+      "addressLines": ["1191 Center Point Dr, Henderson, NV 89074"],
+      "country": "United States of America",
+      "contactPerson": "",
+      "mobile": "+8335994614",
+      "email": ""
+    },
+    "fromLocation": "JAFZA",
+    "toCountry": "USA",
+    "transactionType": "Export",
+    "paymentMethod": "",
+    "refAcNo": "",
+    "goodsDescription": "Computer Parts",
+    "hsCodeLabel": "AS PER INVOICE",
+    "marksAndNumbers": "As Advised",
+    "cargoType": "PKG",
+    "packageType": "PALLET",
+    "carrierAgent": "",
+    "items": [
+      { "itemCode": "EMEA_PROMO_R 760XS_SPL1", "description": "PED R760;Xeon Silver4514Y; 32GB; 2TB", "qty": 6, "serialNo": "", "unitPrice": 5799.00, "hsCode": "84715000", "eccn": "", "coo": "PL", "inboundRef": "502-00237286-26", "grossWeightKg": 258 },
+      { "itemCode": "210-BFUS", "description": "BTO OEM PowerEdge R760XS", "qty": 10, "serialNo": "", "unitPrice": 11124.81, "hsCode": "84715000", "eccn": "", "coo": "PL", "inboundRef": "502-00485045-26", "grossWeightKg": 390 },
+      { "itemCode": "210-BFUS", "description": "BTO OEM PowerEdge R760XS", "qty": 5, "serialNo": "", "unitPrice": 12225.59, "hsCode": "84715000", "eccn": "", "coo": "PL", "inboundRef": "502-00485045-26", "grossWeightKg": 195 },
+      { "itemCode": "210-BFUS", "description": "BTO OEM PowerEdge R760XS", "qty": 5, "serialNo": "", "unitPrice": 12225.59, "hsCode": "84715000", "eccn": "", "coo": "PL", "inboundRef": "502-00485045-26", "grossWeightKg": 195 },
+      { "itemCode": "210-BFUS", "description": "BTO OEM PowerEdge R760XS", "qty": 5, "serialNo": "", "unitPrice": 13226.96, "hsCode": "84715000", "eccn": "", "coo": "PL", "inboundRef": "502-00485045-26", "grossWeightKg": 195 },
+      { "itemCode": "210-BFUS", "description": "BTO OEM PowerEdge R760XS", "qty": 35, "serialNo": "", "unitPrice": 13226.96, "hsCode": "84715000", "eccn": "", "coo": "PL", "inboundRef": "502-00485045-26", "grossWeightKg": 1375 },
+      { "itemCode": "210-BFUS", "description": "BTO OEM PowerEdge R760XS", "qty": 30, "serialNo": "", "unitPrice": 14741.48, "hsCode": "84715000", "eccn": "", "coo": "PL", "inboundRef": "502-00485045-26", "grossWeightKg": 1181 },
+      { "itemCode": "210-BFUS", "description": "BTO OEM PowerEdge R760XS", "qty": 10, "serialNo": "", "unitPrice": 14741.48, "hsCode": "84715000", "eccn": "", "coo": "PL", "inboundRef": "502-00485045-26", "grossWeightKg": 380 },
+      { "itemCode": "210-BFUS", "description": "BTO OEM PowerEdge R760XS", "qty": 10, "serialNo": "", "unitPrice": 15943.55, "hsCode": "84715000", "eccn": "", "coo": "PL", "inboundRef": "502-00485045-26", "grossWeightKg": 380 },
+      { "itemCode": "210-BFUS", "description": "BTO OEM PowerEdge R760XS", "qty": 6, "serialNo": "", "unitPrice": 11265.67, "hsCode": "84715000", "eccn": "", "coo": "PL", "inboundRef": "502-00491370-26", "grossWeightKg": 258 }
+    ],
+    "packages": [
+      { "lengthCm": 120, "widthCm": 100, "heightCm": 140, "qty": 4 },
+      { "lengthCm": 120, "widthCm": 100, "heightCm": 144, "qty": 1 },
+      { "lengthCm": 120, "widthCm": 100, "heightCm": 145, "qty": 2 },
+      { "lengthCm": 120, "widthCm": 100, "heightCm": 146, "qty": 8 },
+      { "lengthCm": 120, "widthCm": 100, "heightCm": 147, "qty": 4 },
+      { "lengthCm": 120, "widthCm": 100, "heightCm": 148, "qty": 1 },
+      { "lengthCm": 120, "widthCm": 80, "heightCm": 139, "qty": 1 }
+    ]
+  }
+}

@@ -1,0 +1,579 @@
+{
+  "_comment": "TEST FIXTURE: stress dataset (30 items, 28 package rows, long text, accents). Invented values.",
+  "branding": {
+    "headerText": "Zona Franca de Manzanillo, Colón, República de Panamá - Edificio 12, Oficina 4B (long header text test)"
+  },
+  "invoice": {
+    "date": "2027-12-31",
+    "invoiceRefNo": "EXP/2027/000123/AMENDED-REVISION-B/BATCH-7781",
+    "orderNumber": "SO-2027-55-ALPHA",
+    "currency": "EUR",
+    "importerCode": "IMP-CODE-THAT-IS-QUITE-LONG-12345",
+    "agentCode": "AGENT-42",
+    "repCardNo": "REP-0099-ZZ",
+    "shipper": {
+      "companyName": "Société Générale d'Exportation et de Logistique Internationale S.A.R.L.",
+      "addressLines": [
+        "Zone Industrielle Nord, Bâtiment C, Entrepôt 14, Quai de Chargement 3",
+        "13015 Marseille",
+        "France"
+      ],
+      "contactName": "Hélène Dubois-Martín",
+      "mobile": "+33 4 91 00 00 00"
+    },
+    "shipTo": {
+      "companyName": "Grupo Distribuidor del Pacífico Sociedad Anónima de Capital Variable",
+      "addressLines": [
+        "Avenida de los Insurgentes Sur 1602, Piso 11, Colonia Crédito Constructor",
+        "Delegación Benito Juárez, 03940 Ciudad de México"
+      ],
+      "country": "México",
+      "contactPerson": "José Ángel Núñez",
+      "mobile": "+52 55 5555 0000",
+      "email": "jose.nunez@distribuidor-pacifico.example.com"
+    },
+    "fromLocation": "Port of Marseille-Fos Terminal 4XL",
+    "toCountry": "Mexico (Manzanillo)",
+    "transactionType": "Free Zone Internal Transfer",
+    "paymentMethod": "Others",
+    "refAcNo": "FR76 3000 6000 0112 3456 7890 189",
+    "goodsDescription": "Mixed industrial spare parts, fasteners, filters and pump components as per attached detailed invoice and packing list",
+    "hsCodeLabel": "MULTIPLE - SEE PAGE 3 COMMODITY CLASSIFICATION",
+    "marksAndNumbers": "GDP/MEX/2027/LOT-A TO LOT-F, FRAGILE, KEEP DRY, THIS SIDE UP",
+    "cargoType": "PLT",
+    "packageType": "PALLETS",
+    "carrierAgent": "Compagnie Maritime d'Affrètement - Agence Marseille Fos, Service Export Amériques",
+    "items": [
+      {
+        "itemCode": "SKU-1000",
+        "description": "Spare part type 1 - Ölfilter für Pumpe №0",
+        "qty": 166,
+        "serialNo": "SER0000",
+        "unitPrice": 23696.66,
+        "hsCode": "84817468",
+        "eccn": "5A992",
+        "coo": "CN",
+        "inboundRef": "IB-2027-000",
+        "grossWeightKg": 585.911
+      },
+      {
+        "itemCode": "SKU-1001",
+        "description": "Spare part type 2",
+        "qty": 38,
+        "serialNo": "",
+        "unitPrice": 20531.95,
+        "hsCode": "84812542",
+        "eccn": "",
+        "coo": "VN",
+        "inboundRef": "IB-2027-000",
+        "grossWeightKg": 329.247
+      },
+      {
+        "itemCode": "SKU-1002",
+        "description": "Spare part type 3",
+        "qty": 30,
+        "serialNo": "",
+        "unitPrice": 22742.65,
+        "hsCode": "84814517",
+        "eccn": "",
+        "coo": "IN",
+        "inboundRef": "IB-2027-000",
+        "grossWeightKg": 33.939
+      },
+      {
+        "itemCode": "SKU-1003",
+        "description": "Industrial grade stainless steel fastener assortment with zinc coating, packed in reinforced cartons for export handling and long-distance sea freight",
+        "qty": 223,
+        "serialNo": "SER0003",
+        "unitPrice": 10454.59,
+        "hsCode": "84814943",
+        "eccn": "",
+        "coo": "TR",
+        "inboundRef": "IB-2027-000",
+        "grossWeightKg": 81.824
+      },
+      {
+        "itemCode": "SKU-1004-EXTENDED-VARIANT-CODE",
+        "description": "Spare part type 5",
+        "qty": 218,
+        "serialNo": "",
+        "unitPrice": 1478.23,
+        "hsCode": "84813028",
+        "eccn": "5A992",
+        "coo": "MX",
+        "inboundRef": "IB-2027-001",
+        "grossWeightKg": 852.715
+      },
+      {
+        "itemCode": "SKU-1005",
+        "description": "Spare part type 6 - Ölfilter für Pumpe №5",
+        "qty": 323,
+        "serialNo": "",
+        "unitPrice": 15686.02,
+        "hsCode": "84812013",
+        "eccn": "",
+        "coo": "DE",
+        "inboundRef": "IB-2027-001",
+        "grossWeightKg": 519.477
+      },
+      {
+        "itemCode": "SKU-1006",
+        "description": "Spare part type 7",
+        "qty": 204,
+        "serialNo": "SER0006",
+        "unitPrice": 1240.21,
+        "hsCode": "84814622",
+        "eccn": "",
+        "coo": "CN",
+        "inboundRef": "IB-2027-001",
+        "grossWeightKg": 42.115
+      },
+      {
+        "itemCode": "SKU-1007",
+        "description": "Spare part type 8",
+        "qty": 69,
+        "serialNo": "",
+        "unitPrice": 7240.59,
+        "hsCode": "84813363",
+        "eccn": "",
+        "coo": "VN",
+        "inboundRef": "IB-2027-001",
+        "grossWeightKg": 486.709
+      },
+      {
+        "itemCode": "SKU-1008",
+        "description": "Spare part type 9",
+        "qty": 293,
+        "serialNo": "",
+        "unitPrice": 7712.39,
+        "hsCode": "84813961",
+        "eccn": "5A992",
+        "coo": "IN",
+        "inboundRef": "IB-2027-002",
+        "grossWeightKg": 92.93
+      },
+      {
+        "itemCode": "SKU-1009",
+        "description": "Spare part type 10",
+        "qty": 293,
+        "serialNo": "SER0009",
+        "unitPrice": 15973.02,
+        "hsCode": "84817101",
+        "eccn": "",
+        "coo": "TR",
+        "inboundRef": "IB-2027-002",
+        "grossWeightKg": 87.868
+      },
+      {
+        "itemCode": "SKU-1010",
+        "description": "Industrial grade stainless steel fastener assortment with zinc coating, packed in reinforced cartons for export handling and long-distance sea freight",
+        "qty": 365,
+        "serialNo": "",
+        "unitPrice": 1570.19,
+        "hsCode": "84811976",
+        "eccn": "",
+        "coo": "MX",
+        "inboundRef": "IB-2027-002",
+        "grossWeightKg": 557.185
+      },
+      {
+        "itemCode": "SKU-1011",
+        "description": "Spare part type 12",
+        "qty": 255,
+        "serialNo": "",
+        "unitPrice": 17010.16,
+        "hsCode": "84818005",
+        "eccn": "",
+        "coo": "DE",
+        "inboundRef": "IB-2027-002",
+        "grossWeightKg": 699.55
+      },
+      {
+        "itemCode": "SKU-1012",
+        "description": "Spare part type 13",
+        "qty": 239,
+        "serialNo": "SER0012",
+        "unitPrice": 14639.25,
+        "hsCode": "84818424",
+        "eccn": "5A992",
+        "coo": "CN",
+        "inboundRef": "IB-2027-003",
+        "grossWeightKg": 325.552
+      },
+      {
+        "itemCode": "SKU-1013-EXTENDED-VARIANT-CODE",
+        "description": "Spare part type 14",
+        "qty": 128,
+        "serialNo": "",
+        "unitPrice": 19859.59,
+        "hsCode": "84814999",
+        "eccn": "",
+        "coo": "VN",
+        "inboundRef": "IB-2027-003",
+        "grossWeightKg": 73.853
+      },
+      {
+        "itemCode": "SKU-1014",
+        "description": "Spare part type 15",
+        "qty": 154,
+        "serialNo": "",
+        "unitPrice": 13130.15,
+        "hsCode": "84816627",
+        "eccn": "",
+        "coo": "IN",
+        "inboundRef": "IB-2027-003",
+        "grossWeightKg": 656.555
+      },
+      {
+        "itemCode": "SKU-1015",
+        "description": "Spare part type 16 - Ölfilter für Pumpe №15",
+        "qty": 148,
+        "serialNo": "SER0015",
+        "unitPrice": 15224.17,
+        "hsCode": "84812199",
+        "eccn": "",
+        "coo": "TR",
+        "inboundRef": "IB-2027-003",
+        "grossWeightKg": 106.436
+      },
+      {
+        "itemCode": "SKU-1016",
+        "description": "Spare part type 17",
+        "qty": 215,
+        "serialNo": "",
+        "unitPrice": 4124.47,
+        "hsCode": "84816604",
+        "eccn": "5A992",
+        "coo": "MX",
+        "inboundRef": "IB-2027-004",
+        "grossWeightKg": 136.956
+      },
+      {
+        "itemCode": "SKU-1017",
+        "description": "Industrial grade stainless steel fastener assortment with zinc coating, packed in reinforced cartons for export handling and long-distance sea freight",
+        "qty": 251,
+        "serialNo": "",
+        "unitPrice": 10542.75,
+        "hsCode": "84812271",
+        "eccn": "",
+        "coo": "DE",
+        "inboundRef": "IB-2027-004",
+        "grossWeightKg": 688.161
+      },
+      {
+        "itemCode": "SKU-1018",
+        "description": "Spare part type 19",
+        "qty": 294,
+        "serialNo": "SER0018",
+        "unitPrice": 19727.46,
+        "hsCode": "84816140",
+        "eccn": "",
+        "coo": "CN",
+        "inboundRef": "IB-2027-004",
+        "grossWeightKg": 306.242
+      },
+      {
+        "itemCode": "SKU-1019",
+        "description": "Spare part type 20",
+        "qty": 180,
+        "serialNo": "",
+        "unitPrice": 14859.45,
+        "hsCode": "84818474",
+        "eccn": "",
+        "coo": "VN",
+        "inboundRef": "IB-2027-004",
+        "grossWeightKg": 62.073
+      },
+      {
+        "itemCode": "SKU-1020",
+        "description": "Spare part type 21 - Ölfilter für Pumpe №20",
+        "qty": 48,
+        "serialNo": "",
+        "unitPrice": 23617.06,
+        "hsCode": "84818767",
+        "eccn": "5A992",
+        "coo": "IN",
+        "inboundRef": "IB-2027-005",
+        "grossWeightKg": 627.398
+      },
+      {
+        "itemCode": "SKU-1021",
+        "description": "Spare part type 22",
+        "qty": 34,
+        "serialNo": "SER0021",
+        "unitPrice": 1517.21,
+        "hsCode": "84816072",
+        "eccn": "",
+        "coo": "TR",
+        "inboundRef": "IB-2027-005",
+        "grossWeightKg": 582.487
+      },
+      {
+        "itemCode": "SKU-1022-EXTENDED-VARIANT-CODE",
+        "description": "Spare part type 23",
+        "qty": 349,
+        "serialNo": "",
+        "unitPrice": 20548.21,
+        "hsCode": "84815662",
+        "eccn": "",
+        "coo": "MX",
+        "inboundRef": "IB-2027-005",
+        "grossWeightKg": 645.022
+      },
+      {
+        "itemCode": "SKU-1023",
+        "description": "Spare part type 24",
+        "qty": 343,
+        "serialNo": "",
+        "unitPrice": 8675.46,
+        "hsCode": "84818564",
+        "eccn": "",
+        "coo": "DE",
+        "inboundRef": "IB-2027-005",
+        "grossWeightKg": 320.047
+      },
+      {
+        "itemCode": "SKU-1024",
+        "description": "Industrial grade stainless steel fastener assortment with zinc coating, packed in reinforced cartons for export handling and long-distance sea freight",
+        "qty": 313,
+        "serialNo": "SER0024",
+        "unitPrice": 2927.84,
+        "hsCode": "84811965",
+        "eccn": "5A992",
+        "coo": "CN",
+        "inboundRef": "IB-2027-006",
+        "grossWeightKg": 196.543
+      },
+      {
+        "itemCode": "SKU-1025",
+        "description": "Spare part type 26 - Ölfilter für Pumpe №25",
+        "qty": 148,
+        "serialNo": "",
+        "unitPrice": 3233.94,
+        "hsCode": "84815056",
+        "eccn": "",
+        "coo": "VN",
+        "inboundRef": "IB-2027-006",
+        "grossWeightKg": 358.228
+      },
+      {
+        "itemCode": "SKU-1026",
+        "description": "Spare part type 27",
+        "qty": 255,
+        "serialNo": "",
+        "unitPrice": 2014.99,
+        "hsCode": "84818359",
+        "eccn": "",
+        "coo": "IN",
+        "inboundRef": "IB-2027-006",
+        "grossWeightKg": 361.6
+      },
+      {
+        "itemCode": "SKU-1027",
+        "description": "Spare part type 28",
+        "qty": 143,
+        "serialNo": "SER0027",
+        "unitPrice": 22084.65,
+        "hsCode": "84818053",
+        "eccn": "",
+        "coo": "TR",
+        "inboundRef": "IB-2027-006",
+        "grossWeightKg": 777.613
+      },
+      {
+        "itemCode": "SKU-1028",
+        "description": "Spare part type 29",
+        "qty": 143,
+        "serialNo": "",
+        "unitPrice": 17660.06,
+        "hsCode": "84816878",
+        "eccn": "5A992",
+        "coo": "MX",
+        "inboundRef": "IB-2027-007",
+        "grossWeightKg": 614.514
+      },
+      {
+        "itemCode": "SKU-1029",
+        "description": "Spare part type 30",
+        "qty": 195,
+        "serialNo": "",
+        "unitPrice": 23943.3,
+        "hsCode": "84813472",
+        "eccn": "",
+        "coo": "DE",
+        "inboundRef": "IB-2027-007",
+        "grossWeightKg": 74.87
+      }
+    ],
+    "packages": [
+      {
+        "lengthCm": 120,
+        "widthCm": 100,
+        "heightCm": 174,
+        "qty": 2
+      },
+      {
+        "lengthCm": 120,
+        "widthCm": 80,
+        "heightCm": 165,
+        "qty": 2
+      },
+      {
+        "lengthCm": 110,
+        "widthCm": 80,
+        "heightCm": 90,
+        "qty": 2
+      },
+      {
+        "lengthCm": 110,
+        "widthCm": 80,
+        "heightCm": 168,
+        "qty": 5
+      },
+      {
+        "lengthCm": 110,
+        "widthCm": 100,
+        "heightCm": 178,
+        "qty": 5
+      },
+      {
+        "lengthCm": 80,
+        "widthCm": 100,
+        "heightCm": 148,
+        "qty": 6
+      },
+      {
+        "lengthCm": 80,
+        "widthCm": 80,
+        "heightCm": 140,
+        "qty": 4
+      },
+      {
+        "lengthCm": 110,
+        "widthCm": 100,
+        "heightCm": 151,
+        "qty": 6
+      },
+      {
+        "lengthCm": 110,
+        "widthCm": 100,
+        "heightCm": 114,
+        "qty": 1
+      },
+      {
+        "lengthCm": 120,
+        "widthCm": 80,
+        "heightCm": 110,
+        "qty": 1
+      },
+      {
+        "lengthCm": 110,
+        "widthCm": 100,
+        "heightCm": 103,
+        "qty": 1
+      },
+      {
+        "lengthCm": 80,
+        "widthCm": 100,
+        "heightCm": 158,
+        "qty": 1
+      },
+      {
+        "lengthCm": 110,
+        "widthCm": 100,
+        "heightCm": 99,
+        "qty": 2
+      },
+      {
+        "lengthCm": 80,
+        "widthCm": 80,
+        "heightCm": 109,
+        "qty": 6
+      },
+      {
+        "lengthCm": 110,
+        "widthCm": 80,
+        "heightCm": 167,
+        "qty": 3
+      },
+      {
+        "lengthCm": 110,
+        "widthCm": 100,
+        "heightCm": 104,
+        "qty": 4
+      },
+      {
+        "lengthCm": 110,
+        "widthCm": 80,
+        "heightCm": 151,
+        "qty": 3
+      },
+      {
+        "lengthCm": 120,
+        "widthCm": 100,
+        "heightCm": 103,
+        "qty": 6
+      },
+      {
+        "lengthCm": 110,
+        "widthCm": 80,
+        "heightCm": 151,
+        "qty": 6
+      },
+      {
+        "lengthCm": 120,
+        "widthCm": 100,
+        "heightCm": 116,
+        "qty": 5
+      },
+      {
+        "lengthCm": 110,
+        "widthCm": 100,
+        "heightCm": 178,
+        "qty": 5
+      },
+      {
+        "lengthCm": 120,
+        "widthCm": 80,
+        "heightCm": 172,
+        "qty": 1
+      },
+      {
+        "lengthCm": 80,
+        "widthCm": 80,
+        "heightCm": 156,
+        "qty": 3
+      },
+      {
+        "lengthCm": 120,
+        "widthCm": 80,
+        "heightCm": 118,
+        "qty": 5
+      },
+      {
+        "lengthCm": 80,
+        "widthCm": 80,
+        "heightCm": 171,
+        "qty": 2
+      },
+      {
+        "lengthCm": 80,
+        "widthCm": 100,
+        "heightCm": 120,
+        "qty": 4
+      },
+      {
+        "lengthCm": 80,
+        "widthCm": 100,
+        "heightCm": 115,
+        "qty": 5
+      },
+      {
+        "lengthCm": 110,
+        "widthCm": 80,
+        "heightCm": 93,
+        "qty": 1
+      }
+    ]
+  }
+}

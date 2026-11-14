@@ -12,6 +12,10 @@ import {
   setSalesOrderStatus, softDelete,
 } from './server/invoicing/operations';
 import { renderInvoicePdf } from './server/invoicing/pdf';
+import {
+  deleteShippingInvoice, getCompanyProfile, getShippingInvoice, listShippingInvoices, prefillFromSalesInvoice, saveCompanyProfile,
+  saveShippingInvoice, shippingInvoicePdf,
+} from './server/invoicing/shipping';
 import { agingReport, listAuditLogs, listLedger, outstandingReport, revenueByItemReport, revenueReport } from './server/invoicing/reports';
 import {
   cancelPayment, changeCreditNoteStatus, changePaymentEntryStatus, getCreditNote, getPayment, getPaymentEntry, listCreditNotes,
@@ -120,6 +124,21 @@ on('POST', 'invoicing/subscriptions', ({ db, actor, body }) => saveSubscription(
 on('GET', 'invoicing/subscriptions/:id', async ({ db, params }) => toApi(await db.collection<Doc>(C.subscriptions).findOne({ _id: params[0] })) ?? Promise.reject(notFound('Subscription')));
 on('PATCH', 'invoicing/subscriptions/:id', ({ db, actor, params, body }) => saveSubscription(db, actor, body, params[0]));
 on('PUT', 'invoicing/subscriptions/:id', ({ db, actor, params, body }) => saveSubscription(db, actor, body, params[0]));
+
+/* Shipping invoices + company profile -------------------------------------- */
+on('GET', 'invoicing/company-profile', ({ db }) => getCompanyProfile(db));
+on('PUT', 'invoicing/company-profile', ({ db, actor, body }) => saveCompanyProfile(db, actor, body));
+on('GET', 'invoicing/shipping-invoices', ({ db, url }) => listShippingInvoices(db, url));
+on('POST', 'invoicing/shipping-invoices', ({ db, actor, body }) => saveShippingInvoice(db, actor, body));
+on('GET', 'invoicing/shipping-invoices/prefill/from-sales-invoice/:id', ({ db, params }) => prefillFromSalesInvoice(db, params[0]));
+on('GET', 'invoicing/shipping-invoices/:id/pdf', async ({ db, params, url }) => {
+  const { bytes, filename } = await shippingInvoicePdf(db, params[0]);
+  const disposition = url.searchParams.get('download') === 'true' ? 'attachment' : 'inline';
+  return new Response(new Uint8Array(bytes), { headers: { 'Content-Type': 'application/pdf', 'Content-Disposition': `${disposition}; filename="${filename}"`, 'Cache-Control': 'no-store' } });
+}, true);
+on('GET', 'invoicing/shipping-invoices/:id', ({ db, params }) => getShippingInvoice(db, params[0]));
+on('PUT', 'invoicing/shipping-invoices/:id', ({ db, actor, params, body }) => saveShippingInvoice(db, actor, body, params[0]));
+on('DELETE', 'invoicing/shipping-invoices/:id', ({ db, actor, params }) => deleteShippingInvoice(db, actor, params[0]));
 
 /* Ledger, audit, reports --------------------------------------------------- */
 on('GET', 'invoicing/ledger', ({ db, url }) => listLedger(db, url), true);

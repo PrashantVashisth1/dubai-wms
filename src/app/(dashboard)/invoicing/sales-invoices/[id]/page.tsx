@@ -305,6 +305,9 @@ export default function SalesInvoiceDetailPage() {
           {!isDraft(invoice.status) && !isCancelled(invoice.status) && (
             <Button variant="outline" asChild><Link href={`/invoicing/credit-notes?invoiceId=${invoice.id}`}>Credit Note</Link></Button>
           )}
+          {!isCancelled(invoice.status) && (
+            <Button variant="outline" asChild><Link href={`/invoicing/shipping-invoices/new?fromSalesInvoice=${invoice.id}`}>Shipping Invoice</Link></Button>
+          )}
           {canCancel && (
             <Button variant="destructive" onClick={() => setCancelOpen(true)}><Ban className="mr-2 h-4 w-4" />{isDraft(invoice.status) ? 'Cancel Draft' : 'Cancel Invoice'}</Button>
           )}

@@ -827,7 +827,7 @@ export function AuditLogPage() {
             <SelectValue />
           </SelectTrigger>
           <SelectContent>
-            {['ALL', 'SALES_INVOICE', 'PAYMENT', 'PAYMENT_ENTRY', 'CREDIT_NOTE', 'DELIVERY_NOTE', 'TAX_TEMPLATE', 'PRINT_FORMAT', 'SUBSCRIPTION'].map((type) => (
+            {['ALL', 'SALES_INVOICE', 'PAYMENT', 'PAYMENT_ENTRY', 'CREDIT_NOTE', 'DELIVERY_NOTE', 'TAX_TEMPLATE', 'PRINT_FORMAT', 'SUBSCRIPTION', 'SHIPPING_INVOICE', 'COMPANY_PROFILE'].map((type) => (
               <SelectItem key={type} value={type}>
                 {type.replaceAll('_', ' ')}
               </SelectItem>

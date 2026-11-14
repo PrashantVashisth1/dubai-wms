@@ -18,6 +18,8 @@ export const C = Object.freeze({
   subscriptions: 'subscriptions',
   auditLogs: 'invoice_audit_logs',
   counters: 'counters',
+  shippingInvoices: 'shipping_invoices',
+  companySettings: 'company_settings',
 });
 
 /**
@@ -94,6 +96,11 @@ export const INDEXES = {
   [C.subscriptions]: [
     { key: { isActive: 1, nextRunDate: 1 }, name: 'due_lookup' },
     { key: { customerId: 1 }, name: 'customer' },
+  ],
+  [C.shippingInvoices]: [
+    { key: { invoiceRefNo: 1 }, unique: true, name: 'uniq_invoiceRefNo' },
+    { key: { date: -1, createdAt: -1 }, name: 'recent' },
+    { key: { salesInvoiceId: 1 }, name: 'salesInvoice', partialFilterExpression: { salesInvoiceId: { $type: 'string' } } },
   ],
   [C.auditLogs]: [
     { key: { createdAt: -1 }, name: 'recent' },
